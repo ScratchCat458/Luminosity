@@ -1,4 +1,4 @@
-### Luminosity is a discord bot. Thats it.
+## Luminosity is a discord bot. Thats it.
 
 [Add **Luminosity** to your server](https://discord.com/api/oauth2/authorize?client_id=739047445144666202&permissions=8&scope=bot)
 
