@@ -1,7 +1,3 @@
-layout: page
-title: "Commands"
-permalink: /commands/
-
 # Commands
 Here is the documentation for all commands used by Luminosity. Refer to this page if you are confused about what you can put in arguments and to check out what you can do with the bot.
 
