@@ -17,6 +17,9 @@ public class Luminosity {
 		
 		// Commands
 		jda.addEventListener(new Information());
+		jda.addEventListener(new Help());
+		jda.addEventListener(new Sudo());
+		jda.addEventListener(new BotStatus());
 
 		// Events
 		jda.addEventListener(new GuildMemberJoin());
