@@ -8,10 +8,11 @@ import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.entities.Activity;
 import scratchcat458.luminosity.commands.*;
 import scratchcat458.luminosity.events.*;
+import scratchcat458.utils.*;
 
 public class Luminosity {
 	public static void main(String[] args) throws LoginException {
-		JDA jda = JDABuilder.createDefault(Default.token).build();
+		JDA jda = JDABuilder.createDefault(LumiToken.token).build();
 		jda.getPresence().setStatus(OnlineStatus.IDLE);
 		jda.getPresence().setActivity(Activity.playing(Default.activity));
 		
