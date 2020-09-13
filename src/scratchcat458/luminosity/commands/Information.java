@@ -6,7 +6,7 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import scratchcat458.luminosity.Default;
 
 public class Information extends ListenerAdapter {
-	public void onCommand(GuildMessageReceivedEvent e) {
+	public void onGuildMessageReceived(GuildMessageReceivedEvent e) {
 	String args[] = e.getMessage().getContentRaw().split("\\s+");	
 		if(args[0].equalsIgnoreCase(Default.prefix + "info")) {
 			EmbedBuilder info = new EmbedBuilder();

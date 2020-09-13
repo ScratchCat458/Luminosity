@@ -8,9 +8,11 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
 public class GuildMemberLeave extends ListenerAdapter {
 	String[] messages = {
-			// TODO Write custom responses
+			"We now have the big sad.",
+			"Where did we go wrong?",
+			"potato"
 		};
-	public void onGuildMemberLeave(GuildMemberRemoveEvent e) {
+	public void onGuildMemberRemove(GuildMemberRemoveEvent e) {
 		Random rand = new Random();
 		int number = rand.nextInt(messages.length);
 		

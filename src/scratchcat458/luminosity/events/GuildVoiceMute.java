@@ -5,7 +5,7 @@ import net.dv8tion.jda.api.events.guild.voice.GuildVoiceSelfMuteEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
 public class GuildVoiceMute extends ListenerAdapter {
-	public void onGuildVoiceMute(GuildVoiceSelfMuteEvent e) {	
+	public void onGuildVoiceSelfMute(GuildVoiceSelfMuteEvent e) {
 		EmbedBuilder mute = new EmbedBuilder();
 		mute.setDescription(e.getMember().getAsMention() + " has muted themselves.");
 		

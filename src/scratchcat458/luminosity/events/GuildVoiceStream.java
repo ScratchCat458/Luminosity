@@ -8,7 +8,10 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
 public class GuildVoiceStream extends ListenerAdapter {
 	String[] messages = {
-			// TODO Write custom responses
+			"Grab your popcorn.",
+			"Please set your phone to silent.",
+			"*Universal intro intensifies.*",
+			"*Obligatory, loud THX intro intensifies*"
 		};
 	public void onGuildVoiceStream(GuildVoiceStreamEvent e) {
 		Random rand = new Random();
