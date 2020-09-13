@@ -8,7 +8,11 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
 public class GuildVoiceJoin extends ListenerAdapter {
 	String[] messages = {
-			// TODO Write custom responses
+			"Hand them a pineapple.",
+			"Rejoice!",
+			"Our cover is blown.",
+			"Anyway...",
+			"Did they bring snacks?"
 		};
 	public void onGuildVoiceJoin(GuildVoiceJoinEvent e) {
 		Random rand = new Random();

@@ -8,7 +8,10 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
 public class GuildVoiceLeave extends ListenerAdapter {
 	String[] messages = {
-			// TODO Write custom responses
+			"Return to duty at once.",
+			"They stole ***b u r g e r***.",
+			"The secrets are safe.",
+			"Hope they come back soon."
 		};
 	public void onGuildVoiceLeave(GuildVoiceLeaveEvent e) {
 		Random rand = new Random();
