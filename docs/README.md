@@ -7,7 +7,7 @@ Luminosity is discord bot developed in Java using the JDA library made by DV8Fro
 JDA allows the Discord and the bot to communicate with Java and vice-versa.
 
 #### Features
-* Commands (Full Documentation Below)
+* Commands ([Full Documentation](https://github.com/ScratchCat458/Luminosity/wiki/Commands))
   * Help
   * Information
   * Bot Status
