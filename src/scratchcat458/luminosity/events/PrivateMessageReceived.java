@@ -7,18 +7,19 @@ import java.util.Random;
 
 public class PrivateMessageReceived extends ListenerAdapter {
     public void onPrivateMessageReceived(PrivateMessageReceivedEvent e) {
-        Random rand = new Random();
-        int number = rand.nextInt(10);
+        if(!(e.getAuthor().isBot())) {
+            Random rand = new Random();
+            int number = rand.nextInt(5);
 
-        if(number == 10) {
-            e.getChannel().sendMessage("**BIG NOOB**");
-        }
-        else {
-            while(number>=0){
-                e.getChannel().sendMessage("noob");
-                number-=1;
+            if(number == 4) {
+                e.getChannel().sendMessage("**BIG NOOB**").queue();
+            }
+            else {
+                while(!(number == 0)){
+                    e.getChannel().sendMessage("noob").queue();
+                    number -= 1;
+                }
             }
         }
-
     }
 }

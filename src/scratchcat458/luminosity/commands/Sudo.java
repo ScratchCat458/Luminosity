@@ -6,8 +6,8 @@ import scratchcat458.luminosity.Default;
 
 public class Sudo extends ListenerAdapter {
 	public void onGuildMessageReceived(GuildMessageReceivedEvent e) {
-	String args[] = e.getMessage().getContentRaw().split("\\s+");	
-		if(args[0].equalsIgnoreCase(Default.prefix + "sudo")) {
+		String args[] = e.getMessage().getContentRaw().split("\\s+");
+		if(args[0].equalsIgnoreCase(Default.prefix + "sudo") && !e.getAuthor().isBot()) {
 			e.getGuild().getDefaultChannel().sendMessage(args[1].replace("-", " ")).queue();
 		}
 	}

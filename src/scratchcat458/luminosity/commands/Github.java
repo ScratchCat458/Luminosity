@@ -8,7 +8,7 @@ import scratchcat458.luminosity.Default;
 public class Github extends ListenerAdapter {
     public void onGuildMessageReceived(GuildMessageReceivedEvent e) {
         String args[] = e.getMessage().getContentRaw().split("\\s+");
-        if(args[0].equalsIgnoreCase(Default.prefix + "github")) {
+        if(args[0].equalsIgnoreCase(Default.prefix + "github") && !e.getAuthor().isBot()) {
             EmbedBuilder github = new EmbedBuilder();
             github.setTitle("Github Information");
             github.addField("Repository Name:", "Luminosity", false);

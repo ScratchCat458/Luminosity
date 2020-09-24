@@ -22,6 +22,8 @@ public class Luminosity {
 		jda.addEventListener(new Sudo());
 		jda.addEventListener(new BotStatus());
 		jda.addEventListener(new Github());
+		// jda.addEventListener(new Mute());
+		// jda.addEventListener(new Deafen());
 
 		// Events
 		jda.addEventListener(new GuildMemberJoin());

@@ -8,7 +8,7 @@ import scratchcat458.luminosity.Default;
 public class Information extends ListenerAdapter {
 	public void onGuildMessageReceived(GuildMessageReceivedEvent e) {
 	String args[] = e.getMessage().getContentRaw().split("\\s+");	
-		if(args[0].equalsIgnoreCase(Default.prefix + "info")) {
+		if(args[0].equalsIgnoreCase(Default.prefix + "info") && !e.getAuthor().isBot()) {
 			EmbedBuilder info = new EmbedBuilder();
 			info.setTitle("Bot Information");
 			info.addField("Bot Name:", "Luminosity", false);

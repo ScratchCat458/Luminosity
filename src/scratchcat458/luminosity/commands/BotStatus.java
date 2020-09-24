@@ -9,7 +9,7 @@ import scratchcat458.luminosity.Default;
 public class BotStatus extends ListenerAdapter {
 	public void onGuildMessageReceived(GuildMessageReceivedEvent e) {
 		String args[] = e.getMessage().getContentRaw().split("\\s+");	
-			if(args[0].equalsIgnoreCase(Default.prefix + "status")) {
+			if(args[0].equalsIgnoreCase(Default.prefix + "status") && !e.getAuthor().isBot()) {
 				if(args[1].equalsIgnoreCase("active")) {
 					if(args[2].equalsIgnoreCase("online")) {
 						e.getJDA().getPresence().setStatus(OnlineStatus.ONLINE);
